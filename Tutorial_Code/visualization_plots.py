@@ -11,7 +11,7 @@ from joblib import dump, load
 import joblib
 
 # model loading
-rfc9 = joblib.load('Model/Top9_model.pkl')
+rfc9 = joblib.load('/Model/Top9_model.pkl')
 # data loading (example-Riaz cohort)
 riaz = pd.read_csv("/Data/Riaz_data.csv", sep = "\t", index_col= "Unnamed: 0")
 riaz_meta = pd.read_excel("/Data/riaz_metadata.csv", skiprows=2, index_col= "Unnamed: 0")
